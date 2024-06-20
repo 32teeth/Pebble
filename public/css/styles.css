@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa&display=swap:400,100,500,300italic,500italic,700italic,900,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
+:root {
+  /**
+   * @param {string} white - The color name.
+   */
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-900: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 0%);
+  --color-white-800: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 5%);
+  --color-white-700: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 10%);
+  --color-white-600: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 15%);
+  --color-white-500: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 20%);
+  --color-white-400: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 25%);
+  --color-white-300: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 30%);
+  --color-white-200: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 35%);
+  --color-white-100: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 40%);
+  --color-white-50: color-mix(in hsl, hsl(0, 0%, 100%), hsl(0, 0%, 100%) 45%);
+  /**
+   * @param {string} black - The color name.
+   */
+  --color-black: hsl(0, 0%, 0%);
+  --color-black-900: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 0%);
+  --color-black-800: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 5%);
+  --color-black-700: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 10%);
+  --color-black-600: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 15%);
+  --color-black-500: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 20%);
+  --color-black-400: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 25%);
+  --color-black-300: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 30%);
+  --color-black-200: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 35%);
+  --color-black-100: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 40%);
+  --color-black-50: color-mix(in hsl, hsl(0, 0%, 0%), hsl(0, 0%, 100%) 45%);
+  /**
+   * @param {string} gray - The color name.
+   */
+  --color-gray: hsl(0, 0%, 75%);
+  --color-gray-900: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 0%);
+  --color-gray-800: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 5%);
+  --color-gray-700: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 10%);
+  --color-gray-600: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 15%);
+  --color-gray-500: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 20%);
+  --color-gray-400: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 25%);
+  --color-gray-300: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 30%);
+  --color-gray-200: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 35%);
+  --color-gray-100: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 40%);
+  --color-gray-50: color-mix(in hsl, hsl(0, 0%, 75%), hsl(0, 0%, 100%) 45%);
+  /**
+   * @param {string} blue - The color name.
+   */
+  --color-blue: hsl(216, 89%, 49%);
+  --color-blue-900: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 0%);
+  --color-blue-800: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 5%);
+  --color-blue-700: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 10%);
+  --color-blue-600: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 15%);
+  --color-blue-500: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 20%);
+  --color-blue-400: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 25%);
+  --color-blue-300: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 30%);
+  --color-blue-200: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 35%);
+  --color-blue-100: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 40%);
+  --color-blue-50: color-mix(in hsl, hsl(216, 89%, 49%), hsl(0, 0%, 100%) 45%);
+  /**
+   * @param {string} purple - The color name.
+   */
+  --color-purple: hsl(260, 81%, 65%);
+  --color-purple-900: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 0%);
+  --color-purple-800: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 5%);
+  --color-purple-700: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 10%);
+  --color-purple-600: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 15%);
+  --color-purple-500: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 20%);
+  --color-purple-400: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 25%);
+  --color-purple-300: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 30%);
+  --color-purple-200: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 35%);
+  --color-purple-100: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 40%);
+  --color-purple-50: color-mix(in hsl, hsl(260, 81%, 65%), hsl(0, 0%, 100%) 45%);
+  /**
+   * @param {string} pink - The color name.
+   */
+  --color-pink: hsl(309, 72%, 64%);
+  --color-pink-900: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 0%);
+  --color-pink-800: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 5%);
+  --color-pink-700: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 10%);
+  --color-pink-600: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 15%);
+  --color-pink-500: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 20%);
+  --color-pink-400: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 25%);
+  --color-pink-300: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 30%);
+  --color-pink-200: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 35%);
+  --color-pink-100: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 40%);
+  --color-pink-50: color-mix(in hsl, hsl(309, 72%, 64%), hsl(0, 0%, 100%) 45%);
+  /**
+   * @param {string} orange - The color name.
+   */
+  --color-orange: hsl(42, 88%, 54%);
+  --color-orange-900: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 0%);
+  --color-orange-800: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 5%);
+  --color-orange-700: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 10%);
+  --color-orange-600: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 15%);
+  --color-orange-500: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 20%);
+  --color-orange-400: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 25%);
+  --color-orange-300: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 30%);
+  --color-orange-200: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 35%);
+  --color-orange-100: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 40%);
+  --color-orange-50: color-mix(in hsl, hsl(42, 88%, 54%), hsl(0, 0%, 100%) 45%);
+  /**
+   * @param {string} teal - The color name.
+   */
+  --color-teal: hsl(184, 96%, 45%);
+  --color-teal-900: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 0%);
+  --color-teal-800: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 5%);
+  --color-teal-700: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 10%);
+  --color-teal-600: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 15%);
+  --color-teal-500: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 20%);
+  --color-teal-400: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 25%);
+  --color-teal-300: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 30%);
+  --color-teal-200: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 35%);
+  --color-teal-100: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 40%);
+  --color-teal-50: color-mix(in hsl, hsl(184, 96%, 45%), hsl(0, 0%, 100%) 45%);
+  /**
+   * @param {string} green - The color name.
+   */
+  --color-green: hsl(121, 78%, 45%);
+  --color-green-900: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 0%);
+  --color-green-800: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 5%);
+  --color-green-700: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 10%);
+  --color-green-600: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 15%);
+  --color-green-500: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 20%);
+  --color-green-400: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 25%);
+  --color-green-300: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 30%);
+  --color-green-200: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 35%);
+  --color-green-100: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 40%);
+  --color-green-50: color-mix(in hsl, hsl(121, 78%, 45%), hsl(0, 0%, 100%) 45%);
+  /**
+   * @param {string} red - The color name.
+   */
+  --color-red: hsl(0, 92%, 51%);
+  --color-red-900: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 0%);
+  --color-red-800: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 5%);
+  --color-red-700: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 10%);
+  --color-red-600: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 15%);
+  --color-red-500: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 20%);
+  --color-red-400: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 25%);
+  --color-red-300: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 30%);
+  --color-red-200: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 35%);
+  --color-red-100: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 40%);
+  --color-red-50: color-mix(in hsl, hsl(0, 92%, 51%), hsl(0, 0%, 100%) 45%);
+}
+
+@property --code {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+:root {
+  --stroke: 0.05rem;
+  --curve: cubic-bezier(.5,-0.53,.14,1.23);
+}
+
+status {
+  font-family: "Comfortaa";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 3rem;
+  user-select: none;
+  background: linear-gradient(to right, transparent calc(50% - var(--stroke)), var(--color-gray-500) calc(50% - var(--stroke)), var(--color-gray-500) calc(50% + var(--stroke)), transparent calc(50% + var(--stroke)));
+  background-size: 100% 6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+codes,
+description {
+  width: 50vw;
+}
+
+codes {
+  counter-set: code var(--code);
+  text-align: right;
+  transition: --code 1250ms;
+}
+codes:before {
+  content: counter(code);
+  font-size: 3rem;
+  color: var(--color-gray-500);
+}
+
+description {
+  text-align: left;
+}
+
+description:before {
+  content: var(--description);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: var(--color-black-800);
+}
+
+/*# sourceMappingURL=styles.css.map */
