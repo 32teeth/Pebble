@@ -47,6 +47,7 @@ update() {
 
   jq ".version = \"$version\"" "$package" > temp.json && mv temp.json "$package"
   changelog "$version"
+  npm run sass:build
   github "$version"
 }
 
