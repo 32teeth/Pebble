@@ -1,0 +1,57 @@
+@property --code {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+:root {
+  --stroke: 0.05rem;
+  --curve: cubic-bezier(.5,-0.53,.14,1.23);
+}
+
+status {
+  font-family: "Comfortaa";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 3rem;
+  user-select: none;
+  background: linear-gradient(
+                to right,
+                transparent calc(50% - var(--stroke)),
+                var(--color-gray-500) calc(50% - var(--stroke)),
+                var(--color-gray-500) calc(50% + var(--stroke)),
+                transparent calc(50% + var(--stroke))
+              );
+  background-size: 100% calc(96 / 16 * 1rem);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+codes,
+description {
+  width: 50vw;
+}
+
+codes {
+  counter-set: code var(--code);
+  text-align: right;
+  transition: --code 1250ms;
+
+  &:before {
+    content: counter(code);
+    font-size: calc(48 / 16 * 1rem);
+    color: var(--color-gray-500);
+  }
+}
+
+
+description {
+  text-align: left;
+}
+
+description:before {
+  content: var(--description);
+}

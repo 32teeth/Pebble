@@ -1,0 +1,31 @@
+{
+  "name": "pebble",
+  "description": "A (S)crappy scss to dump CSS for linking using CDN",
+  "version": "0.0.1",
+  "main": "index.js",
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  },
+  "scripts": {
+    "sass:build": "sass src/scss:public/css",
+    "sass:watch": "sass --watch src/scss:public/css",
+    "sass": "run-p sass:watch"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Eugene Yevhen Andruszczenko",
+    "email": "eugene.andruszczenko@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "32teeth",
+      "email": "eugene.andruszczenko@gmail.com",
+      "url": "https://github.com/32teeth"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.74.1"
+  }
+}
