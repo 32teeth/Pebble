@@ -5,37 +5,36 @@
 }
 
 :root {
-  --stroke: 0.05rem;
+  --stroke: var(--border-pixel);
   --curve: cubic-bezier(.5,-0.53,.14,1.23);
 }
 
 status {
-  font-family: "Comfortaa";
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   gap: 3rem;
   user-select: none;
   background: linear-gradient(
                 to right,
                 transparent calc(50% - var(--stroke)),
-                var(--color-gray-500) calc(50% - var(--stroke)),
-                var(--color-gray-500) calc(50% + var(--stroke)),
-                transparent calc(50% + var(--stroke))
+                var(--gray-50) calc(50% - var(--stroke)),
+                var(--gray-50) calc(50%),
+                transparent calc(50%)
               );
   background-size: 100% calc(96 / 16 * 1rem);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-codes,
+state,
 description {
   width: 50vw;
 }
 
-codes {
+state {
   counter-set: code var(--code);
   text-align: right;
   transition: --code 1250ms;
@@ -43,7 +42,7 @@ codes {
   &:before {
     content: counter(code);
     font-size: calc(48 / 16 * 1rem);
-    color: var(--color-gray-500);
+    color: var(--gray-50);
   }
 }
 
@@ -54,4 +53,5 @@ description {
 
 description:before {
   content: var(--description);
+  color: var(--theme);
 }

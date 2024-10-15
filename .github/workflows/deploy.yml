@@ -1,0 +1,39 @@
+name: Build Sass
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.x"
+
+      # Step 3: Install dependencies
+      - name: Install npm dependencies
+        run: npm install
+
+      # Step 4: Run Sass build
+      - name: Run Sass build
+        run: npm run sass:build
+
+      # Step 5: Upload built CSS as artifact (optional)
+      - name: Upload CSS artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: css-files
+          path: public/css

@@ -32,17 +32,26 @@ $luminances: (
   "300": 30%,
   "200": 35%,
   "100": 40%,
-  "50": 45%
+  "50": 45%,
+  "25": 75%,
+  "10": 90%,
+  "0": 100%
 );
 
-:root {
-  @each $color, $value in $colors {
-    /**
-     * @param {string} #{$color} - The color name.
-     */
-    --color-#{$color}: #{$value};
+@mixin generate-theme($theme) {
+  :root {
+    --theme: #{$theme};
     @each $luminance, $percent in $luminances {
-      --color-#{$color}-#{$luminance}: #{color-mix(in  hsl, $value, $color-white $percent)};
+      --theme-#{$luminance}: #{color-mix(in hsl, #{$theme}, white $percent)};
+    }
+
+    @each $name, $color in $colors {
+      @each $luminance, $percent in $luminances {
+        --#{$name}-#{$luminance}: #{color-mix(in hsl, $color, white $percent)};
+      }
     }
   }
 }
+
+
+
